@@ -18,7 +18,8 @@ pagetitle:string= "products List"
    imagewidth: number =50;
 
    imageMargin : number =2;
-
+   showImage : boolean = false;
+  listFilter : string ='cart'
   products: any[]=[
     {
     "productId": 1,
@@ -71,4 +72,8 @@ pagetitle:string= "products List"
     "imageUrl": "assets/images/xbox-controller.png"
   }
 ];
+
+toggleImage(): void {
+  this.showImage =!this.showImage;
+}
 }
